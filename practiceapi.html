@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .plant-details {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+        }
+        .plant-details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="plant-container" class="plant-details"></div>
+
+<script>
+    const API_KEY = 'lbaRkDY7_eaVUWXPjKLSYsSKbJbtc6mjicmxWf-xLjc'; // Your API key
+    const PLANT_ID = 1; // Replace with the actual plant ID you want to fetch
+
+    fetch(`https://trefle.io/api/v1/plants/${PLANT_ID}?token=${API_KEY}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok: ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const plantContainer = document.getElementById('plant-container');
+            const plant = data; // Access the plant data directly
+
+            // Create elements to display plant details
+            const title = document.createElement('h2');
+            title.textContent = plant.common_name || 'Unknown Plant';
+            
+            const img = document.createElement('img');
+            img.src = plant.image_url || 'https://via.placeholder.com/400';
+            img.alt = plant.common_name || 'Plant Image';
+
+            const scientificName = document.createElement('p');
+            scientificName.textContent = `Scientific Name: ${plant.scientific_name || 'N/A'}`;
+
+            const description = document.createElement('p');
+            description.textContent = plant.description || 'No description available.';
+
+            // Append elements to the container
+            plantContainer.appendChild(title);
+            plantContainer.appendChild(img);
+            plantContainer.appendChild(scientificName);
+            plantContainer.appendChild(description);
+        })
+        .catch(error => {
+            console.error('Error fetching plant data:', error);
+            document.getElementById('plant-container').innerHTML = '<p>Error fetching plant data. Please try again later.</p>';
+        });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .buts {
+            border: 10px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+            border-radius: 20px; 
+            height: 50px;
+            width:150px;
+        }
+        
+        body {
+            text-align: center;
+            background-color: #d6824c;
+        }
+        
+        .img1:hover {
+           
+        }
+        .navbar ul{
+            list-style-type: none;
+            padding: 0px;
+            margin:0px;
+            overflow:hidden;
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+        .navbar .search-container {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+            margin-left: 50px;
+        }
+        .navbar input[type="search"] {
+            margin-left: 10px;
+            width: 400px;
+        }
+        .navbar a{
+            color:grey;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            margin-right: 35px;
+        }
+        .navbar a:hover{
+            color:black;
+            background-color:light rgb(238, 148, 148) ;
+        }
+        .navbar li{
+            float: left;
+        }
+        .nature {
+        float: left;
+        margin-left: 50px;
+        }
+        .navbar{
+        width: 100%;
+        height: 50px;
+        }
+
+    .img1:hover,
+    .img2:hover,
+    .img3:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+    }
+    .g1:hover,.g2:hover{
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+    }
+    .bg{
+        background-image:url("mgarden2.jpg")
+    }
+    .follow {
+    
+    text-align: center;
+    
+}
+#photoArray{
+        display:grid;
+        grid-gap: 5em;
+        grid-template-areas:
+        "photoOne photoTwo photoThree"
+        "photoOne photoFour photoFive";
+    grid-template-columns: 1fr 20% 20%;
+      }
+      #photoArray > div{
+        
+      }
+      #photoArray > div:first-child {
+      grid-area: photoOne;
+      height:140px;
+    }
+    .PHOTO1{
+        height:200px;
+        width:200px;
+    }
+    #HAHA{
+        height:400px;
+        width:450px; 
+    }
+    </style>
+</head>
+
+<body>
+    
+
+    <nav class="navbar">
+        
+        <ul>
+            <li class="search-container"><i class="fa-solid fa-magnifying-glass"></i><img src="icons8-search-50.png" height="15px" width="15px"> <input type="search" placeholder="Search..."></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#"></i><button value="Your Cart">
+                Your cart</button></a></li>
+        </ul>
+    <div class="bg">
+    </nav>
+    <img src="natures bloom logo.png">
+    <p style="font-size:40px;color:limegreen;">"Where Nature Blossoms"</p>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <img src="tulip.jpg" class="img1" height="200em" width="200">
+    <img src="sunflower.jpg" class="img2" height="200em" width="200">
+    <img src="whiterose.jpg" class="img3" height="200em" width="200">
+    <br>    
+    <br>
+    <br>
+    <br>
+    <button id="shopNowButton" class="buts" style="color: red;background-color: white;" >
+        <i class="fas fa-shopping-cart" style="color: #cf0202;"></i> Shop Now
+    </button>
+
+    <br>
+    <hr>
+    <h1>Featured Products</h1>
+    <div class="featured">
+    <img src="gumamela.jpg" height="200em" width="200px" class="g1">
+    <img src="whiterose.jpg"  height="200em" width="200px" class="g2">
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <p>NewsLetter <input type="search" placeholder="search flower"></p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quae eos, quibusdam voluptates porro possimus obcaecati voluptate fuga id autem iure iste, sit dolorem minima aspernatur asperiores harum aliquam adipisci.
+    <hr>
+    <div class="container">
+        <section id="photoArray">
+         <div><img src="gumamela.jpg" class="PHOTO1" id="HAHA" >
+             <P>Product Name:<b> Sunflower</b></P>
+             <P>Price:200</P>
+             <P>Rating:<i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></P>    
+         </div>
+         
+         <div><img src="gumamela.jpg" class="PHOTO1" >
+             <P>Product Name:<b> Tulip</b></P>
+             <P>Price:200</P>
+             <P>Rating:<i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></P>
+         </div>
+         <div><img src="gumamela.jpg" class="PHOTO1" >
+             <P>Product Name:<b> Tulip</b></P>
+             <P>Price:200</P>
+             <P>Rating:<i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></P>
+         </div>
+         <div><img src="gumamela.jpg" class="PHOTO1" >
+             <P>Product Name:<b> Tulip</b></P>
+             <P>Price:200</P>
+             <P>Rating:<i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></P>
+         </div>
+         <div><img src="gumamela.jpg" class="PHOTO1" >
+             <P>Product Name:<b> Tulip</b></P>
+             <P>Price:200</P>
+             <P>Rating:<i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></P>
+         </div>
+        </section>
+         <div>
+    <hr>
+
+    <h1>About Nature's Bloom:</h1>
+    <pre>          Nature's Bloom is more than just a flower shop; it's a celebration of nature's wonders. Join us in
+        embracing the beauty of flowers and let us help you create cherished moments that will be remembered for a lifetime. 
+    Experience the enchantment of Nature's Bloom and let the magic of flowers ignite your senses.</pre>
+    <hr>
+
+<div class="lastsection">
+    <img src="natures bloom logo.png" height="200px" width="250px"> 
+    </pre>
+    <pre><b>Address: Brgy.Balingcanaway Tarlac City</b>
+    </pre>
+<p>
+    
+    Follow us on:
+    <br>
+    <i class="fa-brands fa-facebook" style="color: #0a64ff;"></i>
+    Facebook:Nature's Bloom
+    <br>
+    <i class="fa-brands fa-instagram" style="color: #f05705;"></i> Instagram:@NATURESBLOOM   
+</p>
+</div>
+
+
+    <script>
+        var shopNowButton = document.getElementById("shopNowButton");
+
+        shopNowButton.addEventListener("click", function() {
+            // Add your desired action here
+            alert("Added To Cart!");
+        });
+    </script>
+    
+</body>
+</html>

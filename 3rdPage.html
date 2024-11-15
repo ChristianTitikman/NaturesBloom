@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nature's Bloom</title>
+    <link rel="icon" type="text/image" href="natures bloom logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            text-align: center;
+            font-family: Tahoma, sans-serif;
+            color: whitesmoke;
+            background-color: #9ab482;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            background-color: green;
+            
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            color: greenyellow;
+        }
+
+        .logoside {
+            height: 50px;
+            width: 60px;
+        }
+
+        .buts {
+            border: 10px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+            border-radius: 5px;
+            height: 30px;
+            width: 100px;
+        }
+
+        hr {
+            border-color: limegreen;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .photos {
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .laman {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .laman pre {
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
+        }
+
+        .laman button {
+            background-color: #37432B;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .laman button:hover {
+            background-color: #495a36;
+        }
+
+        .Similar {
+            display: grid; /* Using CSS Grid for a slanted grid layout */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible column width */
+            gap: 20px; /* Spacing between items */
+            justify-items: center; /* Center content within each grid cell */
+        }
+
+        .Similar img {
+            height: 195px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .Similar p {
+            margin: 5px 0; /* Small margins for text */
+            text-align: center;
+            font-size: 14px; /* Slightly smaller font size for product names */
+        }
+        /* Styling the select element */
+select {
+  /* Set the desired width */
+  width: 200px;
+  
+  /* Add some padding and border */
+  padding: 5px;
+  border: 1px solid #ccc;
+  
+  /* Customize the font */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  
+  /* Add custom background and text colors */
+  background-color: #f2f2f2;
+  color: #333;
+  
+  /* Customize the appearance */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Styling the dropdown arrow */
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Styling the hover and focus states */
+select:hover,
+select:focus {
+  border-color: #999;
+}
+p{
+    color: black;
+}
+pre{
+    color: black;
+}
+.photo1:hover,.photo2:hover,.photo3:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+.photo1,.photo2,.photo3{
+  outline: 2px solid #333;
+}
+.picr{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    outline: 2px solid black;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">  <!--tHIS DISPLAY MY LOGO IN SIDE-->
+        <img src="natures bloom logo.png" alt="MyLOGO" class="logoside"> 
+        <ul>
+            <li><a href="MAINPAGE.html">Home &nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+            <li><a href="#About">About&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+            <li><a href="#">Shop&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+            <li><a href="#">&nbsp;Help</a></li>
+            <li>
+                <a href="#">
+                    <button id="cartButton" class="buts" style="color: white; background-color: red;">
+                        <i class="fa-solid fa-cart-shopping" style="color: black;"></i>Your Cart
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+<div class="container">
+    <hr>
+    <img src="Mygrid.png" alt="Product Photo" class="photos">
+    <div class="laman">
+        <h1 style="text-shadow: 2px 2px black;">Sunflower</h1>  
+        <pre>Rating:<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>        10,000 reviews</pre>
+        <hr>
+<pre style="font-size: 24px;">Price:<b>₱200</b>  <label for="cars"></label>            <select name="food" id="cars">
+    <option value="volvo">Tulip</option>
+    <option value="saab">WhiteRose</option>
+    <option value="mercedes">Santan</option>
+    <option value="audi">Gumamela</option>
+</select>
+        </pre>
+        <hr>
+        <pre>
+They are bright and cheery, and as warm and inviting as the sweet summer sun. 
+With brilliant yellow petals, also known as “rays,” sunflowers have an 
+unmistakable sun-like appearance that has made them a crowd favorite, 
+especially in the summer months.
+        </pre>
+        
+        <button id="addToCartBtn">Add to Cart</button>
+        
+    </div>
+</div>
+<div class="bg2" style="background-color: green;"><hr>
+<br>
+<h1 style="text-shadow: 2px 2px black;">Similar Products</h1>
+<div class="Similar"> <!-- CSS Grid for a slanted layout -->
+    <div>
+        <img src="gumamela.jpg" alt="Gumamela" class="photo1">
+        <p>Product Name: Gumamela</p>
+        <p>Rating: 
+<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>
+Price: ₱200
+        </p>
+    </div>
+    <div>
+        <img src="whiterose.jpg" alt="WhiteRose" class="photo2">
+        <p>Product Name: White Rose</p>
+        <p>Rating: 
+<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>
+Price: ₱200
+        </p>
+    </div>
+    <div>
+        <img src="Santan1.jpg" alt="Santan" class="photo3">
+        <p>Product Name: Santan</p>
+        <p>Rating: 
+<i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><br>
+Price: ₱200
+        </p>
+    </div>
+</div>
+<br>
+<br>
+</div>
+
+<h1 style="text-align: left;text-shadow: 1px 1px black;">Reviews</h1>
+<div class="Review" style="text-align: left;">
+<pre style="color: black;"><img src="https://media.philstar.com/photos/2020/10/29/tekla-new_2020-10-29_12-05-16.jpg" class="picr"> Tekla Takla
+        October 14,2024                                                                        Ang ganda ng mga flower's dito pwede pampatay charizzz!
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>   
+</pre>
+<pre style="color: black;"><img src="https://pbs.twimg.com/media/FkA9mv8VEAA8kOG.jpg" class="picr"> Benjamin Titikman
+        August 24,2024                                                                        Ang gaganda ng mga flowers dito solid ay titikman!!!!
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>   
+</pre>
+
+</div>
+<br>
+<hr>
+<pre><a href="#" style="text-decoration: none; color:black;">Home | </a>&nbsp;<a href="#" style="text-decoration: none; color:black;"> About |</a>&nbsp;<a href="#" style="text-decoration: none; color: black;"> Shop |</a>&nbsp;<a href="#" style="text-decoration: none; color: black;"> Help</a>&nbsp;</pre>
+</nav>
+<pre>© Nature's Bloom</pre>
+
+<script>
+    var shopNowButton = document.getElementById("addToCartBtn");
+
+    shopNowButton.addEventListener("click", function() {
+        // Add your desired action here
+        alert("Added to Cart!");
+    });
+    var productImages = document.querySelectorAll(".photo1, .photo2, .photo3");
+        productImages.forEach(function(img) {
+            img.addEventListener("click", function() {
+                var confirmAdd = confirm("Do you want to add this item to your cart?");
+                if (confirmAdd) {
+                    alert("Item added to your cart.");
+                }
+            });
+        });
+</script>
+</body>
+
+</html>
